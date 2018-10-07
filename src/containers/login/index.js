@@ -1,18 +1,5 @@
-/**
- *
- * <p>Title: BONC - React </p>
- *
- * <p>Description: 沃指�?/p>
- *
- * <p>Copyright: Copyright BONC(c) 2013 - 2025 </p>
- *
- * <p>Company: 北京东方国信科技股份有限公司 </p>
- *
- * @author zhan
- * @date 2017/8/1
- */
 import Nerv from 'nervjs';
-import "./index.less";
+import './index.less';
 
 // import P from "prop-types";
 // import { observer, inject } from "mobx-react";
@@ -35,35 +22,22 @@ export default class Login extends Nerv.Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: "",
-      password: "",
+      username: '',
+      password: '',
       loginStatus: false
     };
   }
-  componentDidMount() {
-
-  }
-
-
+  componentDidMount() {}
 
   render() {
-
     return (
       <div className="page">
         <div className="main">
           <label>用户名:</label>
-          <input
-            type="text"
-            name="username"
-            required="required"
-          />
+          <input type="text" name="username" required="required" />
           <label>密码:</label>
-          <input
-            type="password"
-            name="password"
-
-          />
-          <button >登陆</button>
+          <input type="password" name="password" />
+          <button>登陆</button>
         </div>
       </div>
     );

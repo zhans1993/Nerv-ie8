@@ -4,9 +4,9 @@
  * 根目录页面
  * description: 开发测试组件
  *
- * author: liutong
+ * author: zhans1993
  *
- * date: 2017/06/06
+ * date:
  */
 
 import Nerv from 'nervjs';
@@ -15,44 +15,39 @@ import Nerv from 'nervjs';
 // import ToTop from '../../component/common/toTop/toTop'
 
 // import Notes from "../../component/common/notes/notes";
-import './index.less'
-import PropTypes from 'prop-types'
+import './index.less';
+import PropTypes from 'prop-types';
 
 export default class Root extends Nerv.Component {
-    constructor(props){
-        super(props);
-        this.state={
-            searchType:"999",
-            search:"",
-            menu:'999',
-            isShowNotes:true,
-            dateSocketIO:false,      //socketIO返回数据状态
-        }
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchType: '999',
+      search: '',
+      menu: '999',
+      isShowNotes: true,
+      dateSocketIO: false //socketIO返回数据状态
+    };
+  }
 
-    render() {
-        // 给子组件传递参数时调用的方式
-        /* let children = React.cloneElement(this.props.children, {
+  render() {
+    // 给子组件传递参数时调用的方式
+    /* let children = React.cloneElement(this.props.children, {
          // searchType: this.state.searchType,
          search: this.state.search,
          menu: this.state.menu
          });*/
-        return (
-            <div className="Root-outer">
-                <div className="Root-header">
-
-                    <div className="Root-nav">
-
-                    </div>
-                </div>
-                <div className="Root-content">
-                    {/*{children}*/}
-                    {this.props.children }
-                    <div className="thematicIndex-toTop">
-
-                    </div>
-                </div>
-            </div>
-        );
-    }
+    return (
+      <div className="Root-outer">
+        <div className="Root-header">
+          <div className="Root-nav" />
+        </div>
+        <div className="Root-content">
+          {/*{children}*/}
+          {this.props.children}
+          <div className="thematicIndex-toTop" />
+        </div>
+      </div>
+    );
+  }
 }
