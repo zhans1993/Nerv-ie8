@@ -120,10 +120,7 @@ module.exports = {
         {
             // .css 解析
             test: /\.css$/,
-            use: [
-                "style-loader",
-                cssLoader
-            ]
+            use: [MiniCssExtractPlugin.loader, cssLoader]
         },
       {
         test: /\.less$/,
