@@ -20,7 +20,7 @@ const cssLoader = {
   }
 };
 const lessLoader = {
-  loader: require.resolve('sass-loader'),
+  loader: require.resolve('less-loader'),
   options: {
     sourceMap: true
   }

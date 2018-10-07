@@ -42,7 +42,7 @@ const postcssLoader = {
   }
 };
 const lessLoader = {
-  loader: require.resolve('sass-loader'),
+  loader: require.resolve('less-loader'),
   options: {
     outputStyle: 'expanded'
   }

@@ -14,10 +14,10 @@ import './index.less';
 // }))
 // @observer
 export default class Login extends Nerv.Component {
-  static propTypes = {
-    location: P.any,
-    history: P.any
-  };
+  // static propTypes = {
+  //   location: P.any,
+  //   history: P.any
+  // };
 
   constructor(props) {
     super(props);
